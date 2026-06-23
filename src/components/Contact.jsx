@@ -43,7 +43,7 @@ export default function Contact() {
           >
             GitHub ↗
           </a>
-          <span className="text-slate-600 text-sm font-mono">{ME.phone}</span>
+         {/* <span className="text-slate-600 text-sm font-mono">{ME.phone}</span> */}
         </div>
       </div>
     </section>

@@ -3,7 +3,7 @@ export const ME = {
   roles:    ["Software Engineer", "AI / ML Engineer", "Business Analyst", "Data Analyst"],
   tagline:  "IT Graduate from University of Moratuwa · Passionate about building intelligent, data-driven solutions.",
   email:    "nethmigunarathna.info@gmail.com",
-  phone:    "(+94) 76 124 7120",
+  phone:    "(+94) 76 #######",
   location: "Matara, Sri Lanka",
   github:   "https://github.com/99anjani",
   linkedin: "https://www.linkedin.com/in/nethmi-anjani-15a7ab230/",

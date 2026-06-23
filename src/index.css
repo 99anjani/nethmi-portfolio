@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; background: #030712; color: #f1f5f9; margin: 0; }
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #030712; }
+::-webkit-scrollbar-thumb { background: linear-gradient(#8b5cf6, #22d3ee); border-radius: 2px; }
+
+@layer components {
+  .glass      { @apply bg-white/[0.04] backdrop-blur-xl border border-white/[0.07]; }
+  .glass-dark { @apply bg-black/35 backdrop-blur-2xl border border-white/[0.06]; }
+  .card-hover { @apply transition-all duration-300 hover:-translate-y-1 hover:border-violet-500/40 hover:shadow-2xl hover:shadow-black/50; }
+  .grad-text  { @apply bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent; }
+  .grad-text-warm { @apply bg-gradient-to-r from-rose-400 to-violet-400 bg-clip-text text-transparent; }
+  .glow-violet { box-shadow: 0 0 60px rgba(139,92,246,0.15); }
+  .glow-sm     { box-shadow: 0 0 30px rgba(139,92,246,0.22); }
+  .tab-active  { @apply bg-violet-500/20 text-violet-400 border-violet-500/50; }
+  .nav-link    { @apply relative text-sm tracking-wide transition-colors duration-200; }
+  .reveal      { @apply opacity-0 translate-y-6 transition-all duration-700 ease-out; }
+  .reveal.visible { @apply opacity-100 translate-y-0; }
+}
+
+.photo-ring {
+  background: conic-gradient(from 0deg, #8b5cf6, #22d3ee, #fb7185, #8b5cf6);
+  /* animation: spin 6s linear infinite; */
+  border-radius: 50%;
+  padding: 3px;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.grid-bg {
+  background-image: linear-gradient(#8b5cf6 1px, transparent 1px),
+                    linear-gradient(90deg, #8b5cf6 1px, transparent 1px);
+  background-size: 60px 60px;
+  opacity: 0.03;
+}
+
+.skill-bar-fill {
+  background: linear-gradient(90deg, #8b5cf6, #22d3ee);
+  transition: width 1s ease-out;
+}

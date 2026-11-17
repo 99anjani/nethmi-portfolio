@@ -79,6 +79,21 @@ export const PROJECTS = [
 
   },
   {
+    name: "Sales & Outlet Performance Dashboard ",
+    slug: "sales-outlet-performance",
+    role: "Data Analyst",
+    desc: "Developed an interactive Power BI dashboard to analyze supermarket sales performance, product categories, and outlet operations. Designed KPI cards and dynamic visualizations to track key performance metrics, compare product and outlet performance, identify sales trends, and explore outlet distribution. Implemented interactive slicers and a reset filters option to enable efficient, user-friendly data exploration.",
+    tech: ["Power BI", "Power Query", "Data Analysis", "DAX", "Data Visualisation"],
+    tags: ["Data Analysis", "Business Analysis"],
+    highlight: true,
+    github: "https://github.com/99anjani/sales-dashboard",
+    live: null,
+    screenshots: [
+      { src: "/images/sales-dashboard/Sales Dashboard.png", caption: "Sales & Outlet Performance Dashboard" },
+
+    ]
+  },
+  {
     name:      "Customer Shopping Behaviour Analytics Dashboard",
     slug: "customer-behavior",
     role:      "Data Analyst",
@@ -88,6 +103,10 @@ export const PROJECTS = [
     highlight: true,
     github:    "https://github.com/99anjani/Customer-Shopping-Behavior",
     live: null,
+    screenshots: [
+      { src: "/images/csb-dashboard/CSB Dashboard.png", caption: "Customer Shopping Behaviour Dashboard" },
+
+    ]
   },
   {
     name:      "Student Depression Prediction Model",
